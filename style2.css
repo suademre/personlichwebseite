@@ -1,0 +1,96 @@
+html {
+	scroll-behavior: smooth;  /*leitet weiches scrollen ein*/
+}
+
+body {
+	font-family: Arial, "sans-serif";
+	font-size: 16px;
+	background-color: #E6E3E3;
+}
+
+#container {
+	width: 85%;
+	max-width: 1100px;
+	margin: 20px auto;
+	/*border: 1px solid #FF0004;*/
+}
+
+h1 {
+	color:#FFF;
+}
+
+h3 {
+	text-align: center;
+	color: black;
+	padding: 20px;
+	background-color:whitesmoke;
+}
+
+p {
+	margin-bottom: 35px;
+}
+
+header {
+	height: 190px;
+	
+}
+
+nav {
+	position: sticky;
+	top: 0px;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	width:20%;
+	list-style: none;
+	/*background-color: #CF0306;*/
+}
+
+nav ul li a {
+	display: block;
+	color: black;
+	text-decoration: none;
+	padding: 10px;
+	text-align: center;
+	background-color: white;
+	
+	transition: 1s;
+}
+
+
+
+
+
+section {
+	/*height: 100vh;*/
+	padding: 100px 30px 30px 30px;
+	margin-bottom: 45px;
+	background-color: #EFBC29;
+}
+
+section.hoch {
+	height: 80vh;
+}
+
+
+
+
+.text {
+	position: relative; /*Bezugspunkt für unser Element h4*/
+}
+
+h4 {
+	position: absolute;
+	top: 0px;
+	color: #fff;
+	font-size: 38px;
+	z-index: 1;
+}
+
+
+

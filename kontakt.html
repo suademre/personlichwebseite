@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 20px;
+
+        }
+
+        .form-control {
+
+            width: 100%;
+            padding: 7px 12px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+
+        }
+
+        .form-group {
+            margin-bottom: 6px;
+        }
+
+        label {
+            display: inline-block;
+            margin-bottom: 4px;
+        }
+
+        .form-control.focus {
+            border-color: #80bdff;
+            outline: 0;
+        }
+
+        .btn {
+            padding: 6px 12px;
+            border-radius: 4px;
+            color: white;
+            background-color: #007bff;
+            border: 1px solid #007bff;
+        }
+
+        .btn:hover {
+            background-color: #0069d9;
+            border: 1px solid #0062cc;
+        }
+
+        .col-25 {
+            float: left;
+            width: 25%;
+        }
+
+        .col-75 {
+            float: left;
+            width: 75%;
+        }
+
+        .is-success {
+            border-color: #28a745;
+        }
+
+        .is-error {
+            border-color: #dc3545;
+        }
+
+        .is-warning {
+            border-color: #ffc107;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #form2 {
+            background: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <div id="form1">
+
+            <nav>
+                <!--logo-->
+                <a href="#" class="logo">Developer</a>
+                <!--menu-->
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+
+                    <li><a href="kontakt.html">Kontakt Uns</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+
+                <!--bars-->
+                <div class="toggle">
+
+                </div>
+            </nav>
+
+            <div>
+                <h1>Kontakt uns</h1>
+            </div>
+
+
+            <br>
+            <hr><br>
+
+            <div id="form2">
+
+
+
+                <div class="form-group clearfix">
+                    <div class="col-25">
+                        <label for="fullname">Fullname</label>
+                    </div>
+
+                    <div class="col-75">
+                        <input type="text" name="fullname" class="form-control">
+                    </div>
+                </div>
+
+                <div class="form-group clearfix">
+                    <div class="col-25">
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" name="email" class="form-control">
+                    </div>
+
+                </div>
+
+                <div class="form-group clearfix">
+                    <div class="col-25">
+                        <label for="message">Message</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea name="message" class="form-control"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="form-group clearfix">
+                    <div class="col-25">
+                        <label for="country">Country</label>
+                    </div>
+                    <div class="col-75">
+                        <select name="country" class="form-control">
+
+                            <option value="Deutschland">Deutschland</option>
+                            <option value="Turkei">Turkei</option>
+                            <option value="Österreich">Österreich</option>
+                            <option value="Polen">Polen</option>
+                            <option value="Australien">Australien</option>
+                            <option value="Frankreich">Frankreich</option>
+                            <option value="Irland">Irland</option>
+                            <option value="Italien">Italien</option>
+                            <option value="die Schweiz">die Schweiz</option>
+                            <option value="Spanien">Spanien</option>
+                            <option value="Griechenland">Griechenland</option>
+
+                        </select>
+                    </div>
+                    <br><br><br>
+
+                    <div class="col-75">
+                        <label for="">Wie lange möchten Sie Service bekommen:</label>
+
+
+                        <p>
+                            Ein Mal <input type="radio" name="services">
+                            3 Monaten <input type="radio" name="services">
+                            6 Monaten <input type="radio" name="services">
+                            9 Monaten <input type="radio" name="services">
+                            1 Jahr <input type="radio" name="services">
+                        </p>
+
+                    </div>
+
+                    <div class="col-75">
+
+                        <p>
+                            <label for="services">Welcher Staat:</label>
+                            <br>
+
+
+                            <input type="checkbox" name="services"> Berlin
+                            <input type="checkbox" name="services"> Baden-Württemberg
+                            <input type="checkbox" name="services"> Bavyera
+                            <input type="checkbox" name="services"> Brandenburg
+                            <br><br>
+                            <input type="checkbox" name="services"> Hamburg
+                            <input type="checkbox" name="services"> Hessen
+                            <input type="checkbox" name="services"> Mecklenburg-Vorpommern
+                            <input type="checkbox" name="services"> Nordrhein-Westfalen
+                            <br><br>
+                            <input type="checkbox" name="services"> Renanya-Palatina
+                            <input type="checkbox" name="services"> Saarland
+                            <input type="checkbox" name="services"> Schleswig-Holstein
+                            <input type="checkbox" name="services"> Türingiya
+                        </p>
+                    </div>
+
+                    <div class="col-75">
+
+                        <p>
+                            <label for="services">Welche serves möchten sie nehmen:</label>
+                            <br>
+
+
+                            <select name="services">
+                                <option>Web Entwickler</option>
+                                <option>App Entwickler</option>
+                                <option>Data Science</option>
+                            </select>
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <input type="submit" value="Submit" class="btn" style="margin-left: 25%;">
+
+            </div>
+        </div>
+
+    </body>
+
+</html>
